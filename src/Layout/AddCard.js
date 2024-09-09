@@ -48,10 +48,10 @@ function AddCard() {
         <Link to={`/decks/${deckId}/cards/new`} className="nav-link active">Add Card</Link>
       </nav>
 
-      {/* Correctly display the title "Add Card" */}
+      
       <h1>{deck.name}: Add Card</h1>
 
-      {/* Use CardForm with the card state, handleChange, and handleSubmit */}
+      
       <CardForm
         card={card}
         handleChange={handleChange}
