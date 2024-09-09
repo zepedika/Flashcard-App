@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function CardForm({ card, handleChange, handleSubmit, donePath }) {
   return (
     <form onSubmit={handleSubmit}>
-      {/* Front Textarea */}
+      
       <div>
         <label htmlFor="front">Front</label>
         <textarea
@@ -17,7 +17,7 @@ function CardForm({ card, handleChange, handleSubmit, donePath }) {
         />
       </div>
 
-      {/* Back Textarea */}
+      
       <div>
         <label htmlFor="back">Back</label>
         <textarea
@@ -31,12 +31,12 @@ function CardForm({ card, handleChange, handleSubmit, donePath }) {
       </div>
 
       <div>
-        {/* Link to cancel */}
+        
         <Link to={donePath}>
           <button type="button" className="btn btn-secondary btn-sm">Cancel</button>
         </Link>
 
-        {/* Submit button */}
+        
         <button type="submit" className="btn btn-primary btn-sm" style={{ margin: "5px" }}>
           Save
         </button>
